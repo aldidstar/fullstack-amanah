@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/ejs/public/stylesheets/style.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1 style="margin-left: 42%;">Data Barang</h1>
+    <div class="container">
+        <hr>
+        
+
+            <div id="detail-item" class="row justify-content-center">
+              <% nama.forEach((item, index) => { %>
+                <div style="margin-top: 2rem;" class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card my-3">          
+                      <div class="card-body">
+                      <p class="card-text">
+                        <%= item.name %>
+                          </p>  
+                          <br>    
+                          <a  href="/barcode/<%= item.query %>" class="btn btn-success">QR Code</a>
+                      </div>
+                    </div>
+                  </div>
+                  <% }) %>
+             
+            </div>
+<br>
+       
+        <a style="margin-left: 45%;" href="/add"  id="btn-detail" class="btn btn-primary">
+            Tambah Barang
+            </a>
+             
+            
+           
+             
+    </div>
+</body>
+
+</html>

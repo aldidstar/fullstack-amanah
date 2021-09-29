@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/ejs/public/stylesheets/style.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1 style="margin-left: 40%; margin-top: 2rem; margin-bottom: 3rem;">Tambah Barang</h1>
+                 <div class="container">   
+                  <form action=""   id="form-add" method="POST">
+                     <!-- <input type="hidden" id="idItem" value=""> -->
+                
+                       <div  class="mb-3 row">
+                           <label for="name" class="col-sm-3 col-form-label">Nama Barang</label>
+                           <div class="col-sm-9">
+                             <input 
+                               class="form-input"
+                               type="text"
+                               id="name"
+                               name="name"
+                             >
+                             </input>
+                           </div>
+                       </div>
+                   
+                           <div  class="mb-3 row">
+                               <label for="Member" class="col-sm-3 col-form-label">Digit Awal</label>
+                               <div class="col-sm-9">
+                                <select id="Type" name="start" >
+                                    <option value="">Choose your choice</option>
+                                    <option value="Switch">SW</option>
+                                    <option value="Server">SV</option>
+                                    <option value="Router">RT</option>
+                                  </select>
+                               </div>
+                           </div>
+                               <div  class="mb-3 row">
+                                 <label for="Member" class="col-sm-3 col-form-label">Kode Branch</label>
+                                 <div class="col-sm-9">
+                                    <select id="month" name="branch" >
+                                        <option value="">Choose your choice</option>
+                                        <option value="Jakarta">JKT</option>
+                                        <option value="Bekasi">BKS</option>
+                                        <option value="Bogor">BGR</option>
+                                        <option value="Bandung">BDG</option>
+                                      </select>
+                               </div>
+                           </div>
+                           <div  class="mb-3 row">
+                               <label for="Member" class="col-sm-3 col-form-label">Bulan</label>
+                               <div class="col-sm-9">
+                                <select id="month" name="month" >
+                                    <option value="">Choose your choice</option>
+                                    <option value="Januari">01</option>
+                                    <option value="Februari">02</option>
+                                    <option value="Maret">03</option>
+                                    <option value="April">04</option>
+                                    <option value="Mei">05</option>
+                                    <option value="Juni">06</option>
+                                    <option value="Juli">07</option>
+                                    <option value="Agustus">08</option>
+                                    <option value="September">09</option>
+                                    <option value="Oktober">10</option>
+                                    <option value="Nopember">11</option>
+                                    <option value="Desember">12</option>
+                                  </select>
+                             </div>
+                         </div>
+
+                         <div  class="mb-3 row">
+                            <label for="Member" class="col-sm-3 col-form-label">Tahun (2 belakang)</label>
+                            <div  class="col-sm-3">
+                             <select id="year" name="year" >
+                                 <option value="">Choose your choice</option>
+                                 <option value="21">21</option>
+                                 <option value="22">22</option>
+                                 <option value="23">23</option>
+                                 <option value="24">24</option>
+                                 <option value="25">25</option>
+                                 <option value="26">26</option>
+                                 <option value="27">27</option>
+                                 <option value="28">28</option>
+                                 <option value="29">29</option>
+                               </select>
+                          </div>
+                      </div>
+                  <br>
+                             <button   type="submit" class="btn btn-primary" >Save</button>
+                             <a href="/" role="button" class="btn btn-warning">Back</a>
+                 </form>
+               
+    </div>
+</body>
+
+</html>
